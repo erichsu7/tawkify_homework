@@ -1,12 +1,19 @@
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../vendor/ProximaNova-Regular.otf") format("opentype");
+  src: url("../vendor/Proxima Nova/ProximaNova-Regular.otf") format("opentype");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../vendor/ProximaNova-Semibold.otf") format("opentype");
-  font-weight: bold;
+  src: url("../vendor/Proxima Nova/ProximaNova-Semibold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../vendor/Proxima Nova/ProximaNova-Light.otf") format("opentype");
+  font-weight: 200;
 }
 
 * {
@@ -48,6 +55,15 @@
   margin-right: 15px;
   padding: 0px 15px !important;
   margin-top: 4px;
+  cursor: pointer;
+}
+
+.call-button:hover {
+  background-color: #A77751 !important;
+}
+
+.call-button:hover div {
+  color: #fff;
 }
 
 .call-button > div > div {
@@ -56,9 +72,17 @@
   font-size: 13px !important;
 }
 
+.call-button > div:nth-child(1) > div {
+  font-weight: 200;
+}
+
 .call-button > div:nth-child(2) > div {
   border-bottom: 1px solid #fff;
   margin-bottom: 0px;
   margin-top: -2px;
   padding-bottom: 0px;
+}
+
+.call-button > div:nth-child(3) > div {
+  font-size: 14px !important;
 }
