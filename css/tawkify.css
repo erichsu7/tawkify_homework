@@ -199,3 +199,16 @@ form input {
   height: 40px;
   border: 2px solid #aaa;
 }
+
+.spinner {
+  position: absolute;
+  right: 12%;
+  font-size: 24px;
+  color: #555;
+  line-height: 10px;
+  cursor: pointer;
+}
+
+.spinner-down {
+  margin-top: -10px;
+}
