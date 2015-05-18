@@ -7,6 +7,8 @@
 
     filepicker.makeDropPane($('.drag-and-drop-container')[0], {
     multiple: true,
+    mimetype: "image/*",
+    maxSize: 4*1024*1024,
     dragEnter: function() {
       $(".drag-and-drop-instructions").html("Drop to upload");
     },
