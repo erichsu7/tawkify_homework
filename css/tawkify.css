@@ -229,3 +229,8 @@ form select {
 .spinner-down {
   margin-top: -10px;
 }
+
+.birthday-container > input {
+  width: 32%;
+  text-align: center;
+}
