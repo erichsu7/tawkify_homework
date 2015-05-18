@@ -20,6 +20,10 @@
   font-family: "Proxima Nova";
 }
 
+ul {
+  list-style: none;
+}
+
 .nav > li > a {
   font-size: 15px;
   color: #fff !important;
@@ -88,7 +92,7 @@
 }
 
 .banner {
-  height: 375px;
+  height: 60%;
   background-image: url("../img/banner.jpeg");
   background-size: cover;
   background-position: 0 15%;
@@ -108,4 +112,51 @@
 .overlay > span {
   padding-top: 4%;
   padding-bottom: 2%;
+}
+
+.progress-tracker {
+  text-align: center;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.step-number {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  height: 40px;
+  width: 40px;
+  padding-top: 2px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.step-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.progress-tracker li:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  position: absolute;
+  left: -50%;
+  top: 20px;
+  z-index: -1;
+}
+
+.progress-tracker li:first-child:after {
+  content: none;
+}
+
+.progress-tracker li.current-step {
+  color: #333;
+}
+
+.progress-tracker li.current-step .step-number {
+  border: 2px solid #333;
 }
