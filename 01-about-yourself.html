@@ -92,7 +92,7 @@
               <label class="field-label col-xs-12 col-md-12">YOUR GENDER</label>
             </div>
             <div class="row">
-              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[gender]" required>
+              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[gender]" data-validation="required">
                 <option></option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -111,7 +111,7 @@
               <label class="field-label col-xs-12 col-md-12">YOU ARE SEEKING</label>
             </div>
             <div class="row">
-              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[sexual_orientation]" required>
+              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[sexual_orientation]" data-validation="required">
                 <option></option>
                 <option value="men">Men</option>
                 <option value="women">Women</option>
@@ -133,7 +133,7 @@
               <label class="field-label col-xs-12 col-md-12">LOCATION</label>
             </div>
             <div class="row">
-              <input class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[location]" placeholder="Enter zipcode" required>
+              <input class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[location]" placeholder="Enter zipcode" data-validation="zipcode">
             </div>
             <div class="row">
               <label class="field-description col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">Where are you located?</label>
@@ -145,9 +145,9 @@
             </div>
             <div class="row">
               <div class="birthday-container col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-                <input name="user[birthday][month]" placeholder="MM">
-                <input name="user[birthday][day]" placeholder="DD">
-                <input name="user[birthday][year]" placeholder="YYYY">
+                <input name="user[birthday][month]" placeholder="MM" data-validation="month">
+                <input name="user[birthday][day]" placeholder="DD" data-validation="day">
+                <input name="user[birthday][year]" placeholder="YYYY" data-validation="year">
               </div>
             </div>
             <div class="row"></div>
@@ -159,7 +159,7 @@
               <label class="field-label col-xs-12 col-md-12">YOUR HEIGHT</label>
             </div>
             <div class="row">
-              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[height]" required>
+              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[height]" data-validation="required">
                 <option></option>
                 <option value="48">4 ft.</option>
                 <option value="49">4 ft. 1 in.</option>
@@ -219,7 +219,7 @@
                 <label class="radio-description-1">Yes</label>
               </div>
               <div class="input-radio-container col-xs-2 col-md-2">
-                <input type="radio" name="user[height_preference]" value="false">
+                <input type="radio" name="user[height_preference]" value="false" checked>
                 <label class="radio-description-2">No</label>
               </div>
             </div>
@@ -235,7 +235,7 @@
               <label class="field-label col-xs-12 col-md-12">OCCUPATION</label>
             </div>
             <div class="row">
-              <textarea class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[occupation]" required></textarea>
+              <textarea class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[occupation]" data-validation="required"></textarea>
             </div>
             <div class="row">
               <label class="field-description col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">What do you do?</label>
@@ -247,7 +247,7 @@
               <label class="field-label col-xs-12 col-md-12">INCOME</label>
             </div>
             <div class="row">
-              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[income]" required>
+              <select class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" name="user[income]" data-validation="required">
                 <option></option>
                 <option value="<40000">Less than $40,000</option>
                 <option value="40000-60000">$40,000-$60,000</option>
@@ -284,7 +284,7 @@
                 <label class="radio-description-1">Yes</label>
               </div>
               <div class="input-radio-container col-xs-2 col-md-2">
-                <input type="radio" name="user[income_preference]" value="false">
+                <input type="radio" name="user[income_preference]" value="false" checked>
                 <label class="radio-description-2">No</label>
               </div>
             </div>
@@ -297,7 +297,7 @@
               <label class="field-label col-xs-12 col-md-12">INTERESTS</label>
             </div>
             <div class="row">
-              <textarea class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[interests]" required></textarea>
+              <textarea class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[interests]" data-validation="required"></textarea>
             </div>
             <div class="row">
               <label class="field-description col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">Tell us a little more about yourself and what you like to do. We read everything, so please share!</label>
@@ -315,5 +315,11 @@
   </body>
   <script src="vendor/jquery-1.11.3.min.js"></script>
   <script src="vendor/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+  <script src="vendor/jQuery-Form-Validator/form-validator/jquery.form-validator.min.js"></script>
   <script src="js/tawkify.js"></script>
+  <script>
+    Tawkify.addValidators();
+    $.validate();
+  </script>
+
 </html>

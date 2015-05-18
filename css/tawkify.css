@@ -346,3 +346,8 @@ input[type="radio"]:focus {
   text-align: center;
   left: 0;
 }
+
+.help-block {
+  clear: both;
+  text-align: center;
+}
