@@ -234,3 +234,49 @@ form select {
   width: 32%;
   text-align: center;
 }
+
+.input-radio-container {
+  padding: 0 !important;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  z-index: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.radio-description-1,
+  .radio-description-2 {
+  position: absolute;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  top: -16px;
+  background-color: #ccc;
+  z-index: -1;
+  color: #fff;
+}
+
+.radio-description-2 {
+  left: 50%
+}
+
+input[type="radio"]:hover + label {
+  background-color: #BCBEC0;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #00B9D7;
+  box-shadow: none;
+}
+
+input[type="radio"]:focus {
+  outline: 0;
+}
