@@ -106,8 +106,8 @@
             <div class="row">
               <label class="field-label col-xs-12 col-md-12">YOU ARE SEEKING</label>
             </div>
-            <div class="row input-sexual-orientation">
-              <input class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[sexual_orientation]" value="Men" disabled>
+            <div class="row input-orientation">
+              <input class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1" type="text" name="user[sexual_orientation]" value="" disabled>
               <div class="spinner">
                 <div class="spinner-up"><i class="fa fa-caret-up"></i></div>
                 <div class="spinner-down"><i class="fa fa-caret-down"></i></div>
@@ -128,7 +128,7 @@
   <script src="js/tawkify.js"></script>
   <script>
     $(function () {
-      Tawkify.genderSpinner();
+      Tawkify.initializeSpinners();
     })
   </script>
 </html>
