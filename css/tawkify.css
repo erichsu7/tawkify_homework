@@ -1,5 +1,11 @@
 @font-face {
   font-family: "Proxima Nova";
+  src: url("../vendor/Proxima Nova/ProximaNova-Light.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
   src: url("../vendor/Proxima Nova/ProximaNova-Regular.otf") format("opentype");
   font-weight: 400;
 }
@@ -7,13 +13,13 @@
 @font-face {
   font-family: "Proxima Nova";
   src: url("../vendor/Proxima Nova/ProximaNova-Semibold.otf") format("opentype");
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../vendor/Proxima Nova/ProximaNova-Light.otf") format("opentype");
-  font-weight: 200;
+  src: url("../vendor/Proxima Nova/ProximaNova-Bold.otf") format("opentype");
+  font-weight: 700;
 }
 
 * {
@@ -93,9 +99,10 @@ ul {
 
 .banner {
   height: 60%;
+  max-height: 325px;
   background-image: url("../img/banner.jpeg");
   background-size: cover;
-  background-position: 0 15%;
+  background-position: 0 25%;
 }
 
 .overlay {
@@ -159,4 +166,32 @@ ul {
 
 .progress-tracker li.current-step .step-number {
   border: 2px solid #333;
+}
+
+.form-heading {
+  text-align: center;
+  font-weight: 200;
+}
+
+.form-instructions {
+  text-align: center;
+  font-weight: 200;
+}
+
+.field-label {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.field-description {
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+}
+
+form input {
+  height: 40px;
 }
