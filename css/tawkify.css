@@ -171,6 +171,7 @@ ul {
 .form-heading {
   text-align: center;
   font-weight: 200;
+  margin-top: 40px;
 }
 
 .form-instructions {
@@ -183,6 +184,7 @@ ul {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
 }
 
 .field-description {
@@ -190,8 +192,10 @@ ul {
   font-weight: 200;
   text-align: center;
   width: 100%;
+  color: #888;
 }
 
 form input {
   height: 40px;
+  border: 2px solid #aaa;
 }
