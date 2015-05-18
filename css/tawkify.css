@@ -195,7 +195,8 @@ ul {
   color: #888;
 }
 
-form input {
+form input,
+  form textarea {
   height: 40px;
   border: 2px solid #aaa;
   background-color: transparent;
@@ -262,10 +263,6 @@ input[type="radio"] {
   background-color: #ccc;
   z-index: -1;
   color: #fff;
-}
-
-.radio-description-2 {
-  left: 50%
 }
 
 input[type="radio"]:hover + label {
