@@ -198,6 +198,16 @@ ul {
 form input {
   height: 40px;
   border: 2px solid #aaa;
+  background-color: transparent;
+}
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 40px;
+  border: 2px solid #aaa;
+  border-radius: 0px !important;
+  background-color: transparent;
 }
 
 .spinner {
@@ -207,6 +217,13 @@ form input {
   color: #555;
   line-height: 10px;
   cursor: pointer;
+  z-index: -1;
+}
+
+.spinner:after {
+  content: "";
+  z-index: 0;
+  width: 100%;
 }
 
 .spinner-down {
