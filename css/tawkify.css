@@ -184,14 +184,13 @@ ul {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .field-description {
   font-size: 14px;
   font-weight: 200;
   text-align: center;
-  width: 100%;
   color: #888;
 }
 
@@ -200,6 +199,10 @@ form input,
   height: 40px;
   border: 2px solid #aaa;
   background-color: transparent;
+}
+
+form textarea {
+  resize: vertical;
 }
 
 form select {
@@ -276,4 +279,19 @@ input[type="radio"]:checked + label {
 
 input[type="radio"]:focus {
   outline: 0;
+}
+
+.save-button {
+  padding: 8px 30px;
+  border: none;
+  font-weight: 700;
+  background-color: #00B9D7;
+  height: auto;
+  font-size: 20px;
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
